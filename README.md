@@ -1,50 +1,72 @@
-# Welcome to your Expo app 👋
+# Ydenn Mobile
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Ydenn est une plateforme qui propose des espaces d’échange et de discussions sur des thématiques en respectant les règles de bienséance. Cette application mobile vise à offrir une alternative sécurisée et bienveillante aux réseaux sociaux traditionnels.
 
-## Get started
+## Table des matières
 
-1. Install dependencies
+- [Fonctionnalités](#fonctionnalités)
+- [Prérequis](#prérequis)
+- [Installation](#installation)
+- [Démarrage](#démarrage)
+- [Structure du projet](#structure-du-projet)
+
+## Fonctionnalités
+
+- Création de compte et connexion sécurisée
+- Espaces de discussion thématiques
+- Anonymat contrôlé
+- Système de ludification avec badges et points
+- Notifications push
+
+## Prérequis
+
+Avant de commencer, assurez-vous d'avoir les outils suivants installés sur votre machine :
+
+- [Node.js](https://nodejs.org/) (version 14.x ou supérieure)
+- [Git](https://git-scm.com/)
+
+## Installation
+
+1. Clonez le repository :
+
+   ```bash
+   git clone https://github.com/votre-utilisateur/ydenn-mobile.git
+   cd ydenn-mobile
+   ```
+
+2. Installez les dépendances :
 
    ```bash
    npm install
    ```
 
-2. Start the app
+## Démarrage
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Pour démarrer l'application en mode développement avec Expo, exécutez la commande suivante :
 
 ```bash
-npm run reset-project
+npx expo start
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Scannez le code QR avec l'application Expo Go sur votre téléphone pour voir l'application en action.
 
-## Learn more
+## Structure du projet
 
-To learn more about developing your project with Expo, look at the following resources:
+Voici une vue d'ensemble de la structure du projet :
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+ydenn-mobile/
+├── app/                     # Code source de l'application
+│   ├── (auth)/              # Ecrans principaux de l'application
+│   ├── (tabs)/              # Services et API
+│   ├── _layout.tsx          # Point d'entrée de l'application
+│   └── index.tsx            # Point d'entrée de l'application
+├── assets/                  # Images, polices et autres ressources statiques
+│── components/              # Composants réutilisables
+│── constants/               # Composants réutilisables
+├── .gitignore               # Fichiers et dossiers à ignorer par Git
+├── app.json                 # Configuration de l'application Expo
+├── package.json             # Dépendances npm et scripts
+├── README.md                # Documentation du projet
+└── tailwind.config.js       # Documentation du projet
+```
